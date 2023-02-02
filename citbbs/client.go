@@ -16,7 +16,7 @@ import (
 )
 
 const (
-	DefaultBaseURL = "http://192.168.1.175:8081/"
+	DefaultBaseURL = "http://localhost:8081/"
 	jsonMediaType  = "application/json"
 )
 
