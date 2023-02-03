@@ -1,4 +1,4 @@
-# cit-go
+# citbbs-go
 
 Go package to access the citbbs API.
 

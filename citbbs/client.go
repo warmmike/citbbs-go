@@ -16,7 +16,7 @@ import (
 )
 
 const (
-	DefaultBaseURL = "http://localhost:8081/"
+	DefaultBaseURL = "http://172-17-0-5.citbbs-api.pod.cluster.local:8081/"
 	jsonMediaType  = "application/json"
 )
 
