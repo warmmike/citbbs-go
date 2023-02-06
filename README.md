@@ -14,3 +14,13 @@ go get github.com/warmmike/citbbs-go/citbbs
 Here is an example usage of the citbbs Go client. Please make sure to
 handle errors in your production application.
 
+```go
+c, _ := citbbs.NewClient(citbbs.WithAccessToken(string(creds)))
+user, _ := c.Users.Get(ctx, &citbbs.GetUserRequest{
+    User: user,
+})
+// Get user resource observability
+user1, _ := c.Users.Get(ctx, &citbbs.GetUserRequest{
+    User: user,
+})
+```
