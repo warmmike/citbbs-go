@@ -16,11 +16,8 @@ handle errors in your production application.
 
 ```go
 c, _ := citbbs.NewClient(citbbs.WithAccessToken(string(creds)))
-user, _ := c.Users.Get(ctx, &citbbs.GetUserRequest{
-    User: user,
-})
 // Get user resource observability
-user1, _ := c.Users.Get(ctx, &citbbs.GetUserRequest{
+user, _ := c.Users.Get(ctx, &citbbs.GetUserRequest{
     User: user,
 })
 ```
