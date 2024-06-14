@@ -51,7 +51,8 @@ type Client struct {
 	// base URL for the API
 	baseURL *url.URL
 
-	Users UsersService
+	Users    UsersService
+	Messages MessagesService
 }
 
 // ListOptions are options for listing responses.
@@ -225,6 +226,7 @@ func NewClient(opts ...ClientOption) (*Client, error) {
 	}
 
 	c.Users = &usersService{client: c}
+	c.Messages = &messagesService{client: c}
 
 	return c, nil
 }
